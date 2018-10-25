@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="list_block">
+      <div class="list_row" *ngFor="let movie of movies">
+          <div class="image_row">
+              <img src="{{movie?.cover_url!= null ? movie.cover_url: imageUrl}}" title="">
+          </div>
+          <div class="info_block">
+              <div class="movie_id"><b>Movie Id:</b> {{movie.id}}</div>
+              <div class="movie_desc"><b>Description:</b> {{movie.description}}</div>
+              <div class="movie_rating"><b>Rating:</b> {{movie.rating}}</div>
+              <div class="movie_title"><b>Title:</b> {{movie.title}}</div>
+          </div>
+      </div>
+    </div>
+</div>
